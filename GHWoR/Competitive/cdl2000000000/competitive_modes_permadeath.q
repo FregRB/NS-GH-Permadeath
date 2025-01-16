@@ -193,7 +193,9 @@ script competitive_main_elimination_watcher_varUpdated
 				if (<bonus_ruleset>.criteria = alive)
 					competitive_check_all_players_eliminated
 					if (<all_players_eliminated> = 1)
-					GuitarEvent_SongWon
+						if (<ruleset> = permadeath)
+							GuitarEvent_SongWon
+						endif
 						GMan_TimerFunc goal = <goal_id> tool = section_timer func = get_precise_time
 						if (<time> > 10000)
 							KillSpawnedScript \{name = competitive_delayed_revive}

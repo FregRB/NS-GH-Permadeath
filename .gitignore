@@ -17,3 +17,5 @@ GH3/*_strings.q
 GH3/compile all to RPCS3.bat
 GHWoR/Competitive/xbox.sh
 GHWoR/Competitive/STFS_rb3con
+GHWoR/Competitive/build_xbox.sh
+GHWoR/Competitive/ps3.sh
