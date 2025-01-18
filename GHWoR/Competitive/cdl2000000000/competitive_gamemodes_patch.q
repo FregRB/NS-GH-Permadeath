@@ -1,6 +1,5 @@
 competitive_rules_array = [
 	faceoff
-    permadeath
 	momentum
 	momentum_plus
 	streakers
@@ -18,10 +17,10 @@ competitive_rules_array = [
 	band_vs_band
 ]
 
-permadeath = {
-	text = qs(0x3CE58FD7)
+do_or_die = {
+	text = qs(0xc86fae2a)
 	upper_text = qs(0xbd8a86e3)
-	description = qs(0xB1420734)
+	description = qs(0xeaf8cc07)
 	full_rules = qs(0x1af46706)
 	image = GR_competitive_elimination
 	condition = band_lobby_is_private_vs_state
@@ -61,7 +60,6 @@ script is_game_rule_playable
 	is_valid = 0
 	switch <game_rule>
 		case elimination
-		case permadeath
 		case do_or_die
 		case momentum
 		case momentum_plus
@@ -193,7 +191,7 @@ script competitive_main_elimination_watcher_varUpdated
 				if (<bonus_ruleset>.criteria = alive)
 					competitive_check_all_players_eliminated
 					if (<all_players_eliminated> = 1)
-						if (<ruleset> = permadeath)
+						if (<ruleset> = do_or_die)
 							GuitarEvent_SongWon
 						endif
 						GMan_TimerFunc goal = <goal_id> tool = section_timer func = get_precise_time

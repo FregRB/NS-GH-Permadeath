@@ -1,6 +1,9 @@
 base-version: 0
 licenses:
 - bits: 1
+  flags: 1
+  id: -1
+- bits: 1
   flags: 0
   id: -1
 - bits: 0
@@ -45,17 +48,14 @@ licenses:
 - bits: 0
   flags: 0
   id: 0
-- bits: 0
-  flags: 0
-  id: 0
 media-id: 0
 package-description:
-- Onyx cache file containing metadata for 424 songs
+- Onyx cache file containing metadata for 447 songs
 - ''
-- Onyx cache file containing metadata for 424 songs
-- Onyx cache file containing metadata for 424 songs
-- Onyx cache file containing metadata for 424 songs
-- Onyx cache file containing metadata for 424 songs
+- Onyx cache file containing metadata for 447 songs
+- Onyx cache file containing metadata for 447 songs
+- Onyx cache file containing metadata for 447 songs
+- Onyx cache file containing metadata for 447 songs
 - ''
 - ''
 - ''
